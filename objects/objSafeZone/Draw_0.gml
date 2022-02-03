@@ -1,0 +1,5 @@
+draw_set_color(global.colours[team])
+draw_set_alpha(0.1)
+draw_rectangle(x1, y1, x2, y2, false)
+draw_set_alpha(1)
+draw_rectangle(x1, y1, x2, y2, true)

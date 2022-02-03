@@ -1,0 +1,12 @@
+sender = global.args[0]
+target_x = global.args[1]
+target_y = global.args[2]
+range = sender.range
+team = sender.team
+damage = sender.damage
+speed = 20
+direction = point_direction(x, y, target_x, target_y)
+image_speed = 0
+image_index = team
+x_start = x
+y_start = y
