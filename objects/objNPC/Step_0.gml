@@ -14,8 +14,8 @@ if (charge - charge_cost > 0 && cooldown == 0) {
 		var potential_x = enemy_to_attack.x + enemy_to_attack.hspeed * steps_to_reach_target
 		var potential_y = enemy_to_attack.y + enemy_to_attack.vspeed * steps_to_reach_target
 		if enemy_to_attack.speed > 0 {
-			potential_x += aim_bias_x*(140+steps_to_reach_target+enemy_to_attack.speed+speed/2)
-			potential_y += aim_bias_y*(140+steps_to_reach_target+enemy_to_attack.speed+speed/2)
+			potential_x += aim_bias_x*(steps_to_reach_target+enemy_to_attack.speed*3+speed)
+			potential_y += aim_bias_y*(steps_to_reach_target+enemy_to_attack.speed*3+speed)
 		}
 		if distance_to_point(potential_x, potential_y) < range {
 			if charge > charge_cost {
