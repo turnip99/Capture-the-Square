@@ -1,4 +1,4 @@
-surface_resize(application_surface, 1600, 900);
+surface_resize(application_surface, window_get_width(), window_get_height());
 randomize()
 generate_room()
 alarm[0] = 60
